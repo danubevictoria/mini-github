@@ -81,12 +81,7 @@ class Dashboard extends React.Component {
             })}
             <Redirect from="/admin" to="/admin/dashboard" />
           </Switch>
-          <Footer fluid />
         </div>
-        <FixedPlugin
-          bgColor={this.state.backgroundColor}
-          handleColorClick={this.handleColorClick}
-        />
       </div>
     );
   }
