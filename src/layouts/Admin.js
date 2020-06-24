@@ -24,9 +24,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import Footer from "components/Footer/Footer.js";
 import Sidebar from "components/Sidebar/Sidebar.js";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.js";
 
 import routes from "routes.js";
 

@@ -104,6 +104,9 @@ class Header extends React.Component {
       });
     }
   };
+  handleSubmit = (e) => {
+    e.preventDefault();
+  };
   componentDidMount() {
     window.addEventListener("resize", this.updateColor.bind(this));
   }
@@ -160,7 +163,7 @@ class Header extends React.Component {
             navbar
             className="justify-content-end"
           >
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <InputGroup className="no-border">
                 <Input placeholder="Search..." />
                 <InputGroupAddon addonType="append">
