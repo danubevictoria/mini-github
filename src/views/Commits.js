@@ -36,14 +36,14 @@ import {
 
 // core components
 import PanelHeader from "components/PanelHeader/PanelHeader.js";
-import dummyRepos from "data/repositories.js";
+import dummyCommits from "data/commits.js";
 
 class RegularTables extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isFetching: false,
-      repositories: [],
+      commits: [],
     };
   }
 
@@ -74,7 +74,7 @@ class RegularTables extends React.Component {
     //         repos: repos,
     //       });
     //     } else {
-    this.setState({ repositories: dummyRepos });
+    this.setState({ commits: dummyCommits });
     //   }
     // })
     // .catch((error) =>
@@ -96,7 +96,7 @@ class RegularTables extends React.Component {
   }
 
   render() {
-    const { repositories } = this.state;
+    const { commits } = this.state;
 
     return (
       <>
@@ -108,40 +108,38 @@ class RegularTables extends React.Component {
                 <CardHeader>
                   <Nav tabs>
                     <NavItem>
-                      <NavLink href="/admin/repositories" active>
-                        Repositories
+                      <NavLink href="#">Repositories</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="#" active>
+                        Commits
                       </NavLink>
                     </NavItem>
                   </Nav>
                 </CardHeader>
                 <CardBody>
                   <ListGroup flush>
-                    {repositories
-                      .sort((a, b) =>
-                        a.stargazers_count > b.stargazers_count ? -1 : 1
-                      )
-                      .map((repo, i) => (
-                        <ListGroupItem key={i}>
-                          <CardTitle tag="h4">
-                            <CardLink
-                              href={`/admin/commits?repo=${repo.full_name}`}
-                            >
-                              {repo.full_name}
-                            </CardLink>
-                          </CardTitle>
-                          <CardSubtitle>
-                            <div className="stats">
-                              <img
-                                src="https://img.icons8.com/ios-filled/16/000000/filled-star.png"
-                                alt="star"
-                              />
-                              <span className="subtitle-text">
-                                {repo.stargazers_count}
-                              </span>
-                            </div>
-                          </CardSubtitle>
-                        </ListGroupItem>
-                      ))}
+                    {commits.map((commit, i) => (
+                      <ListGroupItem key={i}>
+                        <CardTitle tag="h4">
+                          <CardLink href={commit.html_url}>
+                            {commit.commit.message}
+                          </CardLink>
+                        </CardTitle>
+                        <CardSubtitle>
+                          <div className="stats">
+                            <img
+                              className="commit-avatar"
+                              src={commit.author.avatar_url}
+                              alt="author avatar"
+                            />
+                            <span className="subtitle-text">
+                              {commit.author.login}
+                            </span>
+                          </div>
+                        </CardSubtitle>
+                      </ListGroupItem>
+                    ))}
                   </ListGroup>
                 </CardBody>
               </Card>

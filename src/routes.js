@@ -16,11 +16,10 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import Notifications from "views/Notifications.js";
+import Commits from "views/Commits.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
 import Repositories from "views/Repositories.js";
-import Maps from "views/Maps.js";
 import UserPage from "views/UserPage.js";
 
 var dashRoutes = [
@@ -39,20 +38,6 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/maps",
-    name: "Maps",
-    icon: "location_map-big",
-    component: Maps,
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "ui-1_bell-53",
-    component: Notifications,
-    layout: "/admin",
-  },
-  {
     path: "/user-page",
     name: "User Profile",
     icon: "users_single-02",
@@ -64,6 +49,13 @@ var dashRoutes = [
     name: "Repositories",
     icon: "files_paper",
     component: Repositories,
+    layout: "/admin",
+  },
+  {
+    path: "/commits",
+    name: "Commits",
+    icon: "ui-1_bell-53",
+    component: Commits,
     layout: "/admin",
   },
   {
