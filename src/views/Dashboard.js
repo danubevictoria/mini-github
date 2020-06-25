@@ -73,7 +73,7 @@ class Dashboard extends React.Component {
   }
 
   render() {
-    var { organizations } = this.state;
+    const { organizations } = this.state;
 
     return (
       <>
@@ -92,7 +92,9 @@ class Dashboard extends React.Component {
                       alt="org avatar"
                     ></img>
                     <CardTitle tag="h4">
-                      <CardLink href={"/extended-tables"}>{org.login}</CardLink>
+                      <CardLink href={`/admin/repositories?org=${org.login}`}>
+                        {org.login}
+                      </CardLink>
                     </CardTitle>
                   </CardHeader>
                   <CardFooter>

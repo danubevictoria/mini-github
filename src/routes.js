@@ -19,7 +19,7 @@ import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
-import TableList from "views/TableList.js";
+import Repositories from "views/Repositories.js";
 import Maps from "views/Maps.js";
 import UserPage from "views/UserPage.js";
 
@@ -60,10 +60,10 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/extended-tables",
-    name: "Table List",
+    path: "/repositories",
+    name: "Repositories",
     icon: "files_paper",
-    component: TableList,
+    component: Repositories,
     layout: "/admin",
   },
   {
