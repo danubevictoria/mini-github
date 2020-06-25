@@ -21,9 +21,11 @@ import React from "react";
 import {
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   CardLink,
   CardSubtitle,
+  CardText,
   CardTitle,
   ListGroup,
   ListGroupItem,
@@ -104,7 +106,7 @@ class RegularTables extends React.Component {
         <div className="content">
           <Row>
             <Col xs={12}>
-              <Card>
+              <Card className="card-chart">
                 <CardHeader>
                   <Nav tabs>
                     <NavItem>
@@ -124,14 +126,19 @@ class RegularTables extends React.Component {
                         <ListGroupItem key={i}>
                           <CardTitle tag="h4">
                             <CardLink
-                              href={`/admin/repositories?repo=${repo.name}`}
+                              href={`/admin/repositories?repo=${repo.full_name}`}
                             >
-                              {repo.name}
+                              {repo.full_name}
                             </CardLink>
-                            <CardSubtitle className="sm-2 text-muted">
-                              <span>{repo.stargazers_count} stars</span>
-                            </CardSubtitle>
                           </CardTitle>
+                          <CardSubtitle>
+                            <div className="stats">
+                              <img src="https://img.icons8.com/ios-filled/16/000000/filled-star.png" />
+                              <span className="Repositories-stars">
+                                {repo.stargazers_count}
+                              </span>
+                            </div>
+                          </CardSubtitle>
                         </ListGroupItem>
                       ))}
                   </ListGroup>
