@@ -35,8 +35,9 @@ import {
 } from "reactstrap";
 
 // core components
-import PanelHeader from "components/PanelHeader/PanelHeader.js";
-import dummyRepos from "data/repositories.js";
+import PanelHeader from "components/PanelHeader/PanelHeader";
+import dummyRepos from "data/repositories";
+import parseQueryString from "utils/utils";
 
 class RegularTables extends React.Component {
   constructor(props) {
@@ -44,50 +45,58 @@ class RegularTables extends React.Component {
     this.state = {
       isFetching: false,
       repositories: [],
+      search: null,
     };
   }
 
-  getQueryStringParams = (query) => {
-    return query
-      ? (/^[?#]/.test(query) ? query.slice(1) : query)
-          .split("&")
-          .reduce((params, param) => {
-            let [key, value] = param.split("=");
-            params[key] = value
-              ? decodeURIComponent(value.replace(/\+/g, " "))
-              : "";
-            return params;
-          }, {})
-      : {};
-  };
+  fetch() {
+    // FETCH FROM API
+    // const { search } = this.state;
+    // const org = search ? search["org"] : null;
 
-  fetchRepos() {
-    // const org = this.state.org;
+    // if (org) {
+    //   this.setState({ ...this.state, isFetching: true });
 
-    this.setState({ ...this.state, isFetching: true });
+    //   fetch(`https://api.github.com/orgs/${org}/repos`)
+    //     .then((response) => response.json())
+    //     .then((repos) => {
+    //       if (!repos.message) {
+    //         this.setState({
+    //           repos: repos,
+    //         });
+    //       } else {
+    //         //@TODO: Handle 403 Rate Limit Error. Likely show user notification with some call to action. Using authenticated user would help.
+    //         this.setState({ repositories: dummyRepos });
+    //       }
+    //     })
+    //     .catch((error) =>
+    //       this.setState({ message: error.message, isFetching: false })
+    //     );
 
-    // fetch(`https://api.github.com/orgs/${org}/repos`)
-    //   .then((response) => response.json())
-    //   .then((repos) => {
-    //     if (!repos.message) {
-    //       this.setState({
-    //         repos: repos,
-    //       });
-    //     } else {
+    //   this.setState({ ...this.state, isFetching: false });
+    // }
+
+    // FETCH DUMMY DATA
     this.setState({ repositories: dummyRepos });
-    //   }
-    // })
-    // .catch((error) =>
-    //   this.setState({ message: error.message, isFetching: false })
-    // );
-
     this.setState({ ...this.state, isFetching: false });
   }
 
+  getQueryString() {
+    if (this.props.location.search) {
+      const search = parseQueryString(this.props.location.search);
+      this.setState({ search: search });
+    }
+  }
+
   componentDidMount() {
-    // this.getQueryStringParams(this.props.location.search);
-    this.fetchRepos();
-    this.timer = setInterval(() => this.fetchRepos(), 5000);
+    const { isFetching } = this.state;
+
+    this.getQueryString();
+
+    if (!isFetching) {
+      this.fetch();
+      this.timer = setInterval(() => this.fetch(), 5000);
+    }
   }
 
   componentWillUnmount() {
@@ -120,11 +129,11 @@ class RegularTables extends React.Component {
                       .sort((a, b) =>
                         a.stargazers_count > b.stargazers_count ? -1 : 1
                       )
-                      .map((repo, i) => (
-                        <ListGroupItem key={i}>
+                      .map((repo, key) => (
+                        <ListGroupItem key={key}>
                           <CardTitle tag="h4">
                             <CardLink
-                              href={`/admin/commits?repo=${repo.full_name}`}
+                              href={`/admin/commits?repo_full_name=${repo.full_name}`}
                             >
                               {repo.full_name}
                             </CardLink>

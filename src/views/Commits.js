@@ -35,8 +35,9 @@ import {
 } from "reactstrap";
 
 // core components
-import PanelHeader from "components/PanelHeader/PanelHeader.js";
-import dummyCommits from "data/commits.js";
+import PanelHeader from "components/PanelHeader/PanelHeader";
+import dummyCommits from "data/commits";
+import parseQueryString from "utils/utils";
 
 class RegularTables extends React.Component {
   constructor(props) {
@@ -44,50 +45,55 @@ class RegularTables extends React.Component {
     this.state = {
       isFetching: false,
       commits: [],
+      search: null,
     };
   }
 
-  getQueryStringParams = (query) => {
-    return query
-      ? (/^[?#]/.test(query) ? query.slice(1) : query)
-          .split("&")
-          .reduce((params, param) => {
-            let [key, value] = param.split("=");
-            params[key] = value
-              ? decodeURIComponent(value.replace(/\+/g, " "))
-              : "";
-            return params;
-          }, {})
-      : {};
-  };
-
-  fetchRepos() {
-    // const org = this.state.org;
-
-    this.setState({ ...this.state, isFetching: true });
-
-    // fetch(`https://api.github.com/orgs/${org}/repos`)
+  fetch() {
+    // FETCH FROM API
+    // const { search } = this.state;
+    // const repoFullName = search ? search["repo_full_name"] : null;
+    //
+    // this.setState({ ...this.state, isFetching: true });
+    //
+    // fetch(`https://api.github.com/repos/${repoFullName}/commits`)
     //   .then((response) => response.json())
-    //   .then((repos) => {
-    //     if (!repos.message) {
+    //   .then((commits) => {
+    //     if (!commits.message) {
     //       this.setState({
-    //         repos: repos,
+    //         commits: commits,
     //       });
     //     } else {
-    this.setState({ commits: dummyCommits });
-    //   }
-    // })
-    // .catch((error) =>
-    //   this.setState({ message: error.message, isFetching: false })
-    // );
+    //       this.setState({ commits: dummyCommits });
+    //     }
+    //   })
+    //   .catch((error) =>
+    //     this.setState({ message: error.message, isFetching: false })
+    //   );
+    //
+    // this.setState({ ...this.state, isFetching: false });
 
+    // FETCH DUMMY DATA
+    this.setState({ commits: dummyCommits });
     this.setState({ ...this.state, isFetching: false });
   }
 
+  getQueryString() {
+    if (this.props.location.search) {
+      const search = parseQueryString(this.props.location.search);
+      this.setState({ search: search });
+    }
+  }
+
   componentDidMount() {
-    // this.getQueryStringParams(this.props.location.search);
-    this.fetchRepos();
-    this.timer = setInterval(() => this.fetchRepos(), 5000);
+    const { isFetching } = this.state;
+
+    this.getQueryString();
+
+    if (!isFetching) {
+      this.fetch();
+      this.timer = setInterval(() => this.fetch(), 5000);
+    }
   }
 
   componentWillUnmount() {
@@ -119,11 +125,13 @@ class RegularTables extends React.Component {
                 </CardHeader>
                 <CardBody>
                   <ListGroup flush>
-                    {commits.map((commit, i) => (
-                      <ListGroupItem key={i}>
+                    {commits.map((commit, key) => (
+                      <ListGroupItem key={key}>
                         <CardTitle tag="h4">
                           <CardLink href={commit.html_url}>
-                            {commit.commit.message}
+                            {commit && commit.commit
+                              ? commit.commit.message
+                              : null}
                           </CardLink>
                         </CardTitle>
                         <CardSubtitle>

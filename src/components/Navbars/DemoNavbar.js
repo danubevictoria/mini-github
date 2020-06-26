@@ -32,12 +32,19 @@ import {
 import routes from "routes.js";
 
 class Header extends React.Component {
-  state = {
-    isOpen: false,
-    dropdownOpen: false,
-    color: "transparent",
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false,
+      dropdownOpen: false,
+      color: "transparent",
+      search: null,
+    };
+  }
+
   sidebarToggle = React.createRef();
+
   toggle = () => {
     if (this.state.isOpen) {
       this.setState({
@@ -52,11 +59,13 @@ class Header extends React.Component {
       isOpen: !this.state.isOpen,
     });
   };
+
   dropdownToggle = (e) => {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen,
     });
   };
+
   getBrand = () => {
     var name;
     routes.map((prop, key) => {
@@ -82,10 +91,12 @@ class Header extends React.Component {
     });
     return name;
   };
+
   openSidebar = () => {
     document.documentElement.classList.toggle("nav-open");
     this.sidebarToggle.current.classList.toggle("toggled");
   };
+
   // function that adds color white/transparent to the navbar on resize (this is for the collapse)
   updateColor = () => {
     if (window.innerWidth < 993 && this.state.isOpen) {
@@ -98,12 +109,20 @@ class Header extends React.Component {
       });
     }
   };
-  handleSubmit = (e) => {
-    e.preventDefault();
+
+  handleChange = (event) => {
+    this.setState({ search: event.target.value });
   };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    this.props.history.push(`/admin/dashboard?search=${this.state.search}`);
+  };
+
   componentDidMount() {
     window.addEventListener("resize", this.updateColor.bind(this));
   }
+
   componentDidUpdate(e) {
     if (
       window.innerWidth < 993 &&
@@ -114,22 +133,14 @@ class Header extends React.Component {
       this.sidebarToggle.current.classList.toggle("toggled");
     }
   }
+
   render() {
     return (
       // add or remove classes depending if we are on full-screen-maps page or not
       <Navbar
-        color={
-          this.props.location.pathname.indexOf("full-screen-maps") !== -1
-            ? "white"
-            : this.state.color
-        }
+        color={this.state.color}
         expand="lg"
-        className={
-          this.props.location.pathname.indexOf("full-screen-maps") !== -1
-            ? "navbar-absolute fixed-top"
-            : "navbar-absolute fixed-top " +
-              (this.state.color === "transparent" ? "navbar-transparent " : "")
-        }
+        className={"navbar-absolute fixed-top"}
       >
         <Container fluid>
           <Collapse
@@ -137,7 +148,10 @@ class Header extends React.Component {
             navbar
             className="justify-content-end"
           >
-            <form onSubmit={this.handleSubmit}>
+            <form
+              onChange={this.handleChange}
+              onSubmit={this.handleSubmit.bind(this)}
+            >
               <InputGroup className="no-border">
                 <Input placeholder="Search..." />
                 <InputGroupAddon addonType="append">

@@ -1,64 +1,64 @@
 const dummyCommits = [
   {
-    sha: "e64d552f4e5097ffa596d3896b175a6b5f5244ae",
+    sha: "bcc3fd26e2dda05a923751aa32b139f6209fecdf",
     node_id:
-      "MDY6Q29tbWl0MTUwNjg5ODQyOmU2NGQ1NTJmNGU1MDk3ZmZhNTk2ZDM4OTZiMTc1YTZiNWY1MjQ0YWU=",
+      "MDY6Q29tbWl0MjA0NDAyOTpiY2MzZmQyNmUyZGRhMDVhOTIzNzUxYWEzMmIxMzlmNjIwOWZlY2Rm",
     commit: {
       author: {
-        name: "Sergey Piterman",
-        email: "spiterman@users.noreply.github.com",
-        date: "2018-09-28T05:32:29Z",
+        name: "chapj2001",
+        email: "11183508+chapj2001@users.noreply.github.com",
+        date: "2018-10-04T02:49:27Z",
       },
       committer: {
         name: "GitHub",
         email: "noreply@github.com",
-        date: "2018-09-28T05:32:29Z",
+        date: "2018-10-04T02:49:27Z",
       },
       message:
-        "Merge pull request #1 from spiterman/master\n\n(feat) adds README.md",
+        "Merge pull request #645 from chapj2001/dependency-update\n\nKeep cassandra-all compile-time dependency out of the shaded pom.",
       tree: {
-        sha: "40cb0a3d89f51f90480098a74052c297b98f4aa0",
+        sha: "f2f6eaaf89c27a7ceabdf932773c9924d5496003",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/git/trees/40cb0a3d89f51f90480098a74052c297b98f4aa0",
+          "https://api.github.com/repos/Netflix/astyanax/git/trees/f2f6eaaf89c27a7ceabdf932773c9924d5496003",
       },
       url:
-        "https://api.github.com/repos/OutcoSF/prep_material/git/commits/e64d552f4e5097ffa596d3896b175a6b5f5244ae",
+        "https://api.github.com/repos/Netflix/astyanax/git/commits/bcc3fd26e2dda05a923751aa32b139f6209fecdf",
       comment_count: 0,
       verification: {
         verified: true,
         reason: "valid",
         signature:
-          "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbrbztCRBK7hj4Ov3rIwAAdHIIAJk7N3vGkb9FGi3OgmpJjGVG\n6iUvLLNHkfnoNJdGBjINaxU6M0WTZnI4CL4BJ/Ai0QzcOFtE5j72XqSYY0M146XN\nNK3hQV5C9sCauAmY34RDbxfNZABUt8olV9+tSLOlEG6KTXlhtMh53agGsAMEUKDF\nBwReoOljS1E7gKhO045Dnp8SALf2kyuFgtUCTZr4W75aMlK8eEZx8PjookTs3xJM\nxYaGzhbGPymWp7hyWvd8ePTFqeVmr30XaBSVmVSAEXiweSNcX0IYBXUiqr63saL+\n7Zb+IS4fqBp2u9XOgmJ6+nZKwlXbuMhQfUHjSl8g8IjDa/t3kf89vwb+rhavElg=\n=Bg/A\n-----END PGP SIGNATURE-----\n",
+          "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbtX+3CRBK7hj4Ov3rIwAAdHIIAD4L4NGlk0TwBdIJsdGQMXZX\nHEDtDmtcA4FfIvAy4mu66FQL1IRN5rZqbtaV5xRsVv+sGSL0T8/7Q2LM92e6S4BY\nVxjtJeO6u3jClOoUvzi/HrJd567Od7vFT9xCxx4oFh+cqFuHq0mGko2l/XgiBGQL\nSSpnYuiM3vUZYO1Rxi4TIh6fdq3eaYyiL1rPrXjR5gQ6QJ1GaficTwHz/WFA1wR/\nOe5EfAkNdKXHZjPYqGj9obt9Hl5EiMtuF7UBmjSPstNDB0eMjnLzy/iB33vuMcCF\nam0KXrFGK5j2N9kf/we+/fXlRJjrUVSqO5trwnr8frFB7/4yto3UGGxa+Av2B3E=\n=6qzq\n-----END PGP SIGNATURE-----\n",
         payload:
-          "tree 40cb0a3d89f51f90480098a74052c297b98f4aa0\nparent d6ef75a38394b576329032bbd8fc1af853309ab7\nparent e1954969fb5df273c1ac21cb06988e20cacb2f1f\nauthor Sergey Piterman <spiterman@users.noreply.github.com> 1538112749 -0700\ncommitter GitHub <noreply@github.com> 1538112749 -0700\n\nMerge pull request #1 from spiterman/master\n\n(feat) adds README.md",
+          "tree f2f6eaaf89c27a7ceabdf932773c9924d5496003\nparent 677b14a1ebd28ee4cded51748210b191de965bc6\nparent 4949de427f1b10f6a1faeb3d85ff2dbd307faf17\nauthor chapj2001 <11183508+chapj2001@users.noreply.github.com> 1538621367 -0700\ncommitter GitHub <noreply@github.com> 1538621367 -0700\n\nMerge pull request #645 from chapj2001/dependency-update\n\nKeep cassandra-all compile-time dependency out of the shaded pom.",
       },
     },
     url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/e64d552f4e5097ffa596d3896b175a6b5f5244ae",
+      "https://api.github.com/repos/Netflix/astyanax/commits/bcc3fd26e2dda05a923751aa32b139f6209fecdf",
     html_url:
-      "https://github.com/OutcoSF/prep_material/commit/e64d552f4e5097ffa596d3896b175a6b5f5244ae",
+      "https://github.com/Netflix/astyanax/commit/bcc3fd26e2dda05a923751aa32b139f6209fecdf",
     comments_url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/e64d552f4e5097ffa596d3896b175a6b5f5244ae/comments",
+      "https://api.github.com/repos/Netflix/astyanax/commits/bcc3fd26e2dda05a923751aa32b139f6209fecdf/comments",
     author: {
-      login: "spiterman",
-      id: 9453231,
-      node_id: "MDQ6VXNlcjk0NTMyMzE=",
-      avatar_url: "https://avatars3.githubusercontent.com/u/9453231?v=4",
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
       gravatar_id: "",
-      url: "https://api.github.com/users/spiterman",
-      html_url: "https://github.com/spiterman",
-      followers_url: "https://api.github.com/users/spiterman/followers",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
       following_url:
-        "https://api.github.com/users/spiterman/following{/other_user}",
-      gists_url: "https://api.github.com/users/spiterman/gists{/gist_id}",
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
       starred_url:
-        "https://api.github.com/users/spiterman/starred{/owner}{/repo}",
-      subscriptions_url: "https://api.github.com/users/spiterman/subscriptions",
-      organizations_url: "https://api.github.com/users/spiterman/orgs",
-      repos_url: "https://api.github.com/users/spiterman/repos",
-      events_url: "https://api.github.com/users/spiterman/events{/privacy}",
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
       received_events_url:
-        "https://api.github.com/users/spiterman/received_events",
+        "https://api.github.com/users/chapj2001/received_events",
       type: "User",
       site_admin: false,
     },
@@ -87,44 +87,45 @@ const dummyCommits = [
     },
     parents: [
       {
-        sha: "d6ef75a38394b576329032bbd8fc1af853309ab7",
+        sha: "677b14a1ebd28ee4cded51748210b191de965bc6",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/commits/d6ef75a38394b576329032bbd8fc1af853309ab7",
+          "https://api.github.com/repos/Netflix/astyanax/commits/677b14a1ebd28ee4cded51748210b191de965bc6",
         html_url:
-          "https://github.com/OutcoSF/prep_material/commit/d6ef75a38394b576329032bbd8fc1af853309ab7",
+          "https://github.com/Netflix/astyanax/commit/677b14a1ebd28ee4cded51748210b191de965bc6",
       },
       {
-        sha: "e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+        sha: "4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/commits/e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+          "https://api.github.com/repos/Netflix/astyanax/commits/4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
         html_url:
-          "https://github.com/OutcoSF/prep_material/commit/e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+          "https://github.com/Netflix/astyanax/commit/4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
       },
     ],
   },
   {
-    sha: "e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+    sha: "4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
     node_id:
-      "MDY6Q29tbWl0MTUwNjg5ODQyOmUxOTU0OTY5ZmI1ZGYyNzNjMWFjMjFjYjA2OTg4ZTIwY2FjYjJmMWY=",
+      "MDY6Q29tbWl0MjA0NDAyOTo0OTQ5ZGU0MjdmMWIxMGY2YTFmYWViM2Q4NWZmMmRiZDMwN2ZhZjE3",
     commit: {
       author: {
-        name: "Sergey Piterman",
-        email: "sergeypiterman@gmail.com",
-        date: "2018-09-28T05:31:30Z",
+        name: "Jeremy Chapman",
+        email: "chapj2001@gmail.com",
+        date: "2018-08-24T22:33:30Z",
       },
       committer: {
-        name: "Sergey Piterman",
-        email: "sergeypiterman@gmail.com",
-        date: "2018-09-28T05:31:30Z",
+        name: "Jeremy Chapman",
+        email: "chapj2001@gmail.com",
+        date: "2018-08-24T22:33:30Z",
       },
-      message: "(feat) adds README.md",
+      message:
+        "Keep cassandra-all compile-time dependency out of the shaded pom.",
       tree: {
-        sha: "40cb0a3d89f51f90480098a74052c297b98f4aa0",
+        sha: "1557558f001e444e1a50206457bc44e3dcd17a43",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/git/trees/40cb0a3d89f51f90480098a74052c297b98f4aa0",
+          "https://api.github.com/repos/Netflix/astyanax/git/trees/1557558f001e444e1a50206457bc44e3dcd17a43",
       },
       url:
-        "https://api.github.com/repos/OutcoSF/prep_material/git/commits/e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+        "https://api.github.com/repos/Netflix/astyanax/git/commits/4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
       comment_count: 0,
       verification: {
         verified: false,
@@ -134,126 +135,127 @@ const dummyCommits = [
       },
     },
     url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+      "https://api.github.com/repos/Netflix/astyanax/commits/4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
     html_url:
-      "https://github.com/OutcoSF/prep_material/commit/e1954969fb5df273c1ac21cb06988e20cacb2f1f",
+      "https://github.com/Netflix/astyanax/commit/4949de427f1b10f6a1faeb3d85ff2dbd307faf17",
     comments_url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/e1954969fb5df273c1ac21cb06988e20cacb2f1f/comments",
+      "https://api.github.com/repos/Netflix/astyanax/commits/4949de427f1b10f6a1faeb3d85ff2dbd307faf17/comments",
     author: {
-      login: "spiterman",
-      id: 9453231,
-      node_id: "MDQ6VXNlcjk0NTMyMzE=",
-      avatar_url: "https://avatars3.githubusercontent.com/u/9453231?v=4",
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
       gravatar_id: "",
-      url: "https://api.github.com/users/spiterman",
-      html_url: "https://github.com/spiterman",
-      followers_url: "https://api.github.com/users/spiterman/followers",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
       following_url:
-        "https://api.github.com/users/spiterman/following{/other_user}",
-      gists_url: "https://api.github.com/users/spiterman/gists{/gist_id}",
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
       starred_url:
-        "https://api.github.com/users/spiterman/starred{/owner}{/repo}",
-      subscriptions_url: "https://api.github.com/users/spiterman/subscriptions",
-      organizations_url: "https://api.github.com/users/spiterman/orgs",
-      repos_url: "https://api.github.com/users/spiterman/repos",
-      events_url: "https://api.github.com/users/spiterman/events{/privacy}",
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
       received_events_url:
-        "https://api.github.com/users/spiterman/received_events",
+        "https://api.github.com/users/chapj2001/received_events",
       type: "User",
       site_admin: false,
     },
     committer: {
-      login: "spiterman",
-      id: 9453231,
-      node_id: "MDQ6VXNlcjk0NTMyMzE=",
-      avatar_url: "https://avatars3.githubusercontent.com/u/9453231?v=4",
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
       gravatar_id: "",
-      url: "https://api.github.com/users/spiterman",
-      html_url: "https://github.com/spiterman",
-      followers_url: "https://api.github.com/users/spiterman/followers",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
       following_url:
-        "https://api.github.com/users/spiterman/following{/other_user}",
-      gists_url: "https://api.github.com/users/spiterman/gists{/gist_id}",
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
       starred_url:
-        "https://api.github.com/users/spiterman/starred{/owner}{/repo}",
-      subscriptions_url: "https://api.github.com/users/spiterman/subscriptions",
-      organizations_url: "https://api.github.com/users/spiterman/orgs",
-      repos_url: "https://api.github.com/users/spiterman/repos",
-      events_url: "https://api.github.com/users/spiterman/events{/privacy}",
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
       received_events_url:
-        "https://api.github.com/users/spiterman/received_events",
+        "https://api.github.com/users/chapj2001/received_events",
       type: "User",
       site_admin: false,
     },
     parents: [
       {
-        sha: "d6ef75a38394b576329032bbd8fc1af853309ab7",
+        sha: "e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/commits/d6ef75a38394b576329032bbd8fc1af853309ab7",
+          "https://api.github.com/repos/Netflix/astyanax/commits/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
         html_url:
-          "https://github.com/OutcoSF/prep_material/commit/d6ef75a38394b576329032bbd8fc1af853309ab7",
+          "https://github.com/Netflix/astyanax/commit/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
       },
     ],
   },
   {
-    sha: "d6ef75a38394b576329032bbd8fc1af853309ab7",
+    sha: "677b14a1ebd28ee4cded51748210b191de965bc6",
     node_id:
-      "MDY6Q29tbWl0MTUwNjg5ODQyOmQ2ZWY3NWEzODM5NGI1NzYzMjkwMzJiYmQ4ZmMxYWY4NTMzMDlhYjc=",
+      "MDY6Q29tbWl0MjA0NDAyOTo2NzdiMTRhMWViZDI4ZWU0Y2RlZDUxNzQ4MjEwYjE5MWRlOTY1YmM2",
     commit: {
       author: {
-        name: "Sergey Piterman",
-        email: "spiterman@users.noreply.github.com",
-        date: "2018-09-28T05:25:43Z",
+        name: "chapj2001",
+        email: "11183508+chapj2001@users.noreply.github.com",
+        date: "2018-08-24T16:49:22Z",
       },
       committer: {
         name: "GitHub",
         email: "noreply@github.com",
-        date: "2018-09-28T05:25:43Z",
+        date: "2018-08-24T16:49:22Z",
       },
-      message: "Initial commit",
+      message:
+        "Merge pull request #644 from chapj2001/dependency-update\n\nUpdate readme to match deprecation notice on astyanax/wiki",
       tree: {
-        sha: "3b21f2d81ba45b782d853528c5a597a870e4b515",
+        sha: "f97ebb18c0dd9d6d0c294c17024f2e4460978cb6",
         url:
-          "https://api.github.com/repos/OutcoSF/prep_material/git/trees/3b21f2d81ba45b782d853528c5a597a870e4b515",
+          "https://api.github.com/repos/Netflix/astyanax/git/trees/f97ebb18c0dd9d6d0c294c17024f2e4460978cb6",
       },
       url:
-        "https://api.github.com/repos/OutcoSF/prep_material/git/commits/d6ef75a38394b576329032bbd8fc1af853309ab7",
+        "https://api.github.com/repos/Netflix/astyanax/git/commits/677b14a1ebd28ee4cded51748210b191de965bc6",
       comment_count: 0,
       verification: {
         verified: true,
         reason: "valid",
         signature:
-          "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbrbtXCRBK7hj4Ov3rIwAAdHIIAIs+m9PTPbCrLtRSdKFToF5f\nW32pgHQCtzo2WgKo+6F3SFUHoe3Yov3bzpHdZLDyOcoXbLHnKZLIB5xdax2YPFMz\nOAdeOEza0xwl5TKde8TC0vIyn+Defe+ZOLyp24GfqOzcsEEOMDO52jDfSxZkL6dT\nv1JZWjPTxg9SXY86MG9cE1HtQcevtPy793M7kpP0k4KeyxmgZgkT9nertVToJioi\nKrSffq90j6Qm9g+8RdHBKHUAPZzid1BRrAtsLj6Am1FFSbZVu2raTdbUVCyhIKbT\npAPj4tWqme7iAGoUCBOZ80tyZ2Ukk48+CSGbxM5xAgkFl9KaF9afGh/QESNjVrc=\n=GiJD\n-----END PGP SIGNATURE-----\n",
+          "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbgDcTCRBK7hj4Ov3rIwAAdHIIAIKlko4E3nrJ7/O+njUq7Xwo\nk/UZMFhJuurdEblHMqwGQy81uekz7YxApyJ7fZ/Whz/pt/zXVYJNY83Ht7ioeun2\ntJY7uvzpS0oTwlVkrCBRHMXl0tHsszDJsVs279K4+xi7LfMGfWtp2oaGueoEuPBZ\n5Xz8sdQSTqOyvfp78ZXa7r3267TTL/HbN9giyflhbBljeL4LS9LSOVj6YmwNRE21\nwLVEa96JuAh3yJE3L8y5i3o4liHZyI+Ii40t4CRXUCIa0hj36OJrDDxSfWU8cv4d\nOI6WcCLHqUQXGM1GphLYuLvVHKVA1QwmxP3V13U0rEQ2YHKJwGg7a/+HyaybOIk=\n=AHzu\n-----END PGP SIGNATURE-----\n",
         payload:
-          "tree 3b21f2d81ba45b782d853528c5a597a870e4b515\nauthor Sergey Piterman <spiterman@users.noreply.github.com> 1538112343 -0700\ncommitter GitHub <noreply@github.com> 1538112343 -0700\n\nInitial commit",
+          "tree f97ebb18c0dd9d6d0c294c17024f2e4460978cb6\nparent 25dc13214f4d4defdeed0b46fd33ec100faf98b7\nparent e748f96824f8d478e182fa97f5fe8b4da8b5d0bf\nauthor chapj2001 <11183508+chapj2001@users.noreply.github.com> 1535129362 -0700\ncommitter GitHub <noreply@github.com> 1535129362 -0700\n\nMerge pull request #644 from chapj2001/dependency-update\n\nUpdate readme to match deprecation notice on astyanax/wiki",
       },
     },
     url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/d6ef75a38394b576329032bbd8fc1af853309ab7",
+      "https://api.github.com/repos/Netflix/astyanax/commits/677b14a1ebd28ee4cded51748210b191de965bc6",
     html_url:
-      "https://github.com/OutcoSF/prep_material/commit/d6ef75a38394b576329032bbd8fc1af853309ab7",
+      "https://github.com/Netflix/astyanax/commit/677b14a1ebd28ee4cded51748210b191de965bc6",
     comments_url:
-      "https://api.github.com/repos/OutcoSF/prep_material/commits/d6ef75a38394b576329032bbd8fc1af853309ab7/comments",
+      "https://api.github.com/repos/Netflix/astyanax/commits/677b14a1ebd28ee4cded51748210b191de965bc6/comments",
     author: {
-      login: "spiterman",
-      id: 9453231,
-      node_id: "MDQ6VXNlcjk0NTMyMzE=",
-      avatar_url: "https://avatars3.githubusercontent.com/u/9453231?v=4",
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
       gravatar_id: "",
-      url: "https://api.github.com/users/spiterman",
-      html_url: "https://github.com/spiterman",
-      followers_url: "https://api.github.com/users/spiterman/followers",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
       following_url:
-        "https://api.github.com/users/spiterman/following{/other_user}",
-      gists_url: "https://api.github.com/users/spiterman/gists{/gist_id}",
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
       starred_url:
-        "https://api.github.com/users/spiterman/starred{/owner}{/repo}",
-      subscriptions_url: "https://api.github.com/users/spiterman/subscriptions",
-      organizations_url: "https://api.github.com/users/spiterman/orgs",
-      repos_url: "https://api.github.com/users/spiterman/repos",
-      events_url: "https://api.github.com/users/spiterman/events{/privacy}",
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
       received_events_url:
-        "https://api.github.com/users/spiterman/received_events",
+        "https://api.github.com/users/chapj2001/received_events",
       type: "User",
       site_admin: false,
     },
@@ -280,7 +282,115 @@ const dummyCommits = [
       type: "User",
       site_admin: false,
     },
-    parents: [],
+    parents: [
+      {
+        sha: "25dc13214f4d4defdeed0b46fd33ec100faf98b7",
+        url:
+          "https://api.github.com/repos/Netflix/astyanax/commits/25dc13214f4d4defdeed0b46fd33ec100faf98b7",
+        html_url:
+          "https://github.com/Netflix/astyanax/commit/25dc13214f4d4defdeed0b46fd33ec100faf98b7",
+      },
+      {
+        sha: "e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+        url:
+          "https://api.github.com/repos/Netflix/astyanax/commits/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+        html_url:
+          "https://github.com/Netflix/astyanax/commit/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+      },
+    ],
+  },
+  {
+    sha: "e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+    node_id:
+      "MDY6Q29tbWl0MjA0NDAyOTplNzQ4Zjk2ODI0ZjhkNDc4ZTE4MmZhOTdmNWZlOGI0ZGE4YjVkMGJm",
+    commit: {
+      author: {
+        name: "Jeremy Chapman",
+        email: "chapj2001@gmail.com",
+        date: "2018-08-24T16:48:36Z",
+      },
+      committer: {
+        name: "Jeremy Chapman",
+        email: "chapj2001@gmail.com",
+        date: "2018-08-24T16:48:36Z",
+      },
+      message: "Update readme to match deprecation notice on astyanax/wiki",
+      tree: {
+        sha: "afbf641d74796cc34d673bb3835a1f18b50e0403",
+        url:
+          "https://api.github.com/repos/Netflix/astyanax/git/trees/afbf641d74796cc34d673bb3835a1f18b50e0403",
+      },
+      url:
+        "https://api.github.com/repos/Netflix/astyanax/git/commits/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+      comment_count: 0,
+      verification: {
+        verified: false,
+        reason: "unsigned",
+        signature: null,
+        payload: null,
+      },
+    },
+    url:
+      "https://api.github.com/repos/Netflix/astyanax/commits/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+    html_url:
+      "https://github.com/Netflix/astyanax/commit/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf",
+    comments_url:
+      "https://api.github.com/repos/Netflix/astyanax/commits/e748f96824f8d478e182fa97f5fe8b4da8b5d0bf/comments",
+    author: {
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
+      gravatar_id: "",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
+      following_url:
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
+      starred_url:
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
+      received_events_url:
+        "https://api.github.com/users/chapj2001/received_events",
+      type: "User",
+      site_admin: false,
+    },
+    committer: {
+      login: "chapj2001",
+      id: 11183508,
+      node_id: "MDQ6VXNlcjExMTgzNTA4",
+      avatar_url: "https://avatars0.githubusercontent.com/u/11183508?v=4",
+      gravatar_id: "",
+      url: "https://api.github.com/users/chapj2001",
+      html_url: "https://github.com/chapj2001",
+      followers_url: "https://api.github.com/users/chapj2001/followers",
+      following_url:
+        "https://api.github.com/users/chapj2001/following{/other_user}",
+      gists_url: "https://api.github.com/users/chapj2001/gists{/gist_id}",
+      starred_url:
+        "https://api.github.com/users/chapj2001/starred{/owner}{/repo}",
+      subscriptions_url: "https://api.github.com/users/chapj2001/subscriptions",
+      organizations_url: "https://api.github.com/users/chapj2001/orgs",
+      repos_url: "https://api.github.com/users/chapj2001/repos",
+      events_url: "https://api.github.com/users/chapj2001/events{/privacy}",
+      received_events_url:
+        "https://api.github.com/users/chapj2001/received_events",
+      type: "User",
+      site_admin: false,
+    },
+    parents: [
+      {
+        sha: "e63c2908c9c61d7ea75839859b97bb565f374afe",
+        url:
+          "https://api.github.com/repos/Netflix/astyanax/commits/e63c2908c9c61d7ea75839859b97bb565f374afe",
+        html_url:
+          "https://github.com/Netflix/astyanax/commit/e63c2908c9c61d7ea75839859b97bb565f374afe",
+      },
+    ],
   },
 ];
 
