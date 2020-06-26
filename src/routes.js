@@ -41,6 +41,7 @@ var dashRoutes = [
     icon: "files_paper",
     component: Repositories,
     layout: "/admin",
+    visibility: "hidden",
   },
   {
     path: "/commits",
@@ -48,6 +49,7 @@ var dashRoutes = [
     icon: "ui-1_bell-53",
     component: Commits,
     layout: "/admin",
+    visibility: "hidden",
   },
 ];
 export default dashRoutes;
