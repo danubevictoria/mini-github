@@ -52,7 +52,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>Company (disabled)</label>
                           <Input
-                            defaultValue="Creative Code Inc."
+                            defaultValue="Netflix Inc."
                             disabled
                             placeholder="Company"
                             type="text"
@@ -63,7 +63,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>Username</label>
                           <Input
-                            defaultValue="michael23"
+                            defaultValue="danubevictoria"
                             placeholder="Username"
                             type="text"
                           />
@@ -83,7 +83,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>First Name</label>
                           <Input
-                            defaultValue="Mike"
+                            defaultValue="Danube"
                             placeholder="Company"
                             type="text"
                           />
@@ -93,7 +93,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>Last Name</label>
                           <Input
-                            defaultValue="Andrew"
+                            defaultValue="Phan"
                             placeholder="Last Name"
                             type="text"
                           />
@@ -105,7 +105,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>Address</label>
                           <Input
-                            defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                            defaultValue="1234 Springfield Ave"
                             placeholder="Home Address"
                             type="text"
                           />
@@ -117,7 +117,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>City</label>
                           <Input
-                            defaultValue="Mike"
+                            defaultValue="Sunnyside"
                             placeholder="City"
                             type="text"
                           />
@@ -127,7 +127,7 @@ class User extends React.Component {
                         <FormGroup>
                           <label>Country</label>
                           <Input
-                            defaultValue="Andrew"
+                            defaultValue="USA"
                             placeholder="Country"
                             type="text"
                           />
@@ -146,8 +146,7 @@ class User extends React.Component {
                           <label>About Me</label>
                           <Input
                             cols="80"
-                            defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                            that two seat Lambo."
+                            defaultValue="Senior Frontend Engineer. I design and build web apps! Netflix is the best :)"
                             placeholder="Here can be your description"
                             rows="4"
                             type="textarea"
@@ -170,16 +169,18 @@ class User extends React.Component {
                       <img
                         alt="..."
                         className="avatar border-gray"
-                        src={require("assets/img/mike.jpg")}
+                        src="https://media-exp1.licdn.com/dms/image/C5603AQGscOVM1CoxhA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=VbfBhj4BTRfl3ap3VHAez_pc8zVkl5ADKwu9PxWhmyM"
                       />
-                      <h5 className="title">Mike Andrew</h5>
+                      <h5 className="title">Danube Phan</h5>
                     </a>
-                    <p className="description">michael24</p>
+                    <p className="description">danubevictoria</p>
                   </div>
                   <p className="description text-center">
-                    "Lamborghini Mercy <br />
-                    Your chick she so thirsty <br />
-                    I'm in that two seat Lambo"
+                    <br />
+                    Senior Frontend Engineer <br />
+                    I design and build web apps! <br />I{" "}
+                    <i class="fa fa-heart" aria-hidden="true"></i> Netflix
+                    <br />
                   </p>
                 </CardBody>
                 <hr />

@@ -17,24 +17,15 @@
 */
 import Dashboard from "views/Dashboard.js";
 import Commits from "views/Commits.js";
-import Icons from "views/Icons.js";
-import Typography from "views/Typography.js";
 import Repositories from "views/Repositories.js";
 import UserPage from "views/UserPage.js";
 
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Dashboard",
+    name: "Organizations",
     icon: "design_app",
     component: Dashboard,
-    layout: "/admin",
-  },
-  {
-    path: "/icons",
-    name: "Icons",
-    icon: "design_image",
-    component: Icons,
     layout: "/admin",
   },
   {
@@ -56,13 +47,6 @@ var dashRoutes = [
     name: "Commits",
     icon: "ui-1_bell-53",
     component: Commits,
-    layout: "/admin",
-  },
-  {
-    path: "/typography",
-    name: "Typography",
-    icon: "design-2_ruler-pencil",
-    component: Typography,
     layout: "/admin",
   },
 ];

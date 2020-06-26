@@ -131,10 +131,7 @@ class RegularTables extends React.Component {
                           </CardTitle>
                           <CardSubtitle>
                             <div className="stats">
-                              <img
-                                src="https://img.icons8.com/ios-filled/16/000000/filled-star.png"
-                                alt="star"
-                              />
+                              <i className="fa fa-star" />
                               <span className="subtitle-text">
                                 {repo.stargazers_count}
                               </span>
