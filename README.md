@@ -180,7 +180,3 @@ To simplify install and dev server setup I chose to forego using redux. Redux st
 ### Testing
 
 Include unit tests and/or snapshot testing for components and util functions as needed.
-
-## Conclusion
-
-I'm super excited that I have the opportunity to interview at Netflix! And this project was fun to build. Thanks for reviewing!
